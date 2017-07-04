@@ -1,9 +1,9 @@
 // String Constructor (Reference Counting)
-// 2¹ø.
+// 2.
 #include <iostream>
 #include <cstring>
 
-using namespace std;
+/*using namespace std;
 
 struct Manage_String
 {
@@ -20,8 +20,8 @@ public:
     String()
     {
         ms = new Manage_String;
-        ms->size = strlen("hello");
-        ms->buff = new char(ms->size + 1);
+        ms->buff = new char(1);
+        strcpy(ms->buff, "\0");
         ms->ref = 1;
     }
     String(const char* s)
@@ -82,7 +82,8 @@ int main()
     String s1 = "hello";
     cout << s1 << endl;
 
-    String s2 = s1;
+    String s2;
+    s2 = s1;
     cout << s2 << endl;
 
     String s3 = "student";
@@ -93,5 +94,13 @@ int main()
     cout << s1 << endl;
 
     String s4;
+    cout << s4;
     cout << s4 << endl;
-}
+    cout <<"A" << s4 << "B" << endl;
+
+    s4 = "hello";
+    cout << s4 << endl;
+    String s5 = "world";
+    s4 = s5;
+    cout << s5 << endl;
+}*/

@@ -1,6 +1,6 @@
 #include <iostream>
 
-using namespace std;
+/*using namespace std;
 
 class Integer
 {
@@ -40,4 +40,4 @@ int main()
 
     n2++;
     n2.print();
-}
+}*/

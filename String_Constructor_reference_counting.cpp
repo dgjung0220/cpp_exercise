@@ -12,6 +12,14 @@ class String
     int* ref;
 
 public:
+    String()
+    {
+        buff = new char(1);
+        strcpy(buff, "\0");
+
+        ref = new int;
+        *ref = 1;
+    }
     String(const char* s)
     {
         size = strlen(s);
@@ -62,18 +70,32 @@ ostream& operator<<(ostream& os, const String& s)
 }
 
 
+
 int main()
 {
-    String s1 = "hello";
-    cout << s1 << endl;
+   String s1 = "hello";
+   cout << s1 << endl;
 
-    String s2 = s1;
-    cout << s2 << endl;
+   String s2 = s1;
+   cout << s2 << endl;
 
-    String s3 = "world";
-    s3 = s1;
-    cout << s3 << endl;
+   String s3 = "student";
+   s3 = s1;
+   cout << s3 << endl;
 
+   s1 = s1;
+   cout << s1 << endl;
+
+   String s4;
+   cout << s4;
+   cout << s4 << endl;
+   cout <<"A" << s4 << "B" << endl;
+
+   s4 = "hello";
+   cout << s4 << endl;
+   String s5 = "world";
+   s4 = s5;
+   cout << s5 << endl;
 }*/
 
 
